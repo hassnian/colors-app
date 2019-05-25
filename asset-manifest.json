@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/colors-app/static/css/main.59054bfb.chunk.css",
+    "main.js": "/colors-app/static/js/main.1d638747.chunk.js",
+    "main.js.map": "/colors-app/static/js/main.1d638747.chunk.js.map",
+    "runtime~main.js": "/colors-app/static/js/runtime~main.7b7bc380.js",
+    "runtime~main.js.map": "/colors-app/static/js/runtime~main.7b7bc380.js.map",
+    "static/js/2.8bf6fa0e.chunk.js": "/colors-app/static/js/2.8bf6fa0e.chunk.js",
+    "static/js/2.8bf6fa0e.chunk.js.map": "/colors-app/static/js/2.8bf6fa0e.chunk.js.map",
+    "index.html": "/colors-app/index.html",
+    "precache-manifest.c99d3704fefe666e035969645d29da8f.js": "/colors-app/precache-manifest.c99d3704fefe666e035969645d29da8f.js",
+    "service-worker.js": "/colors-app/service-worker.js",
+    "static/css/main.59054bfb.chunk.css.map": "/colors-app/static/css/main.59054bfb.chunk.css.map"
+  }
+}
