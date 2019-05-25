@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
     {console.log(generatePalettes(seedColors[3]))}
-      <Palette {...seedColors[3]}/>
+      <Palette palette={generatePalettes(seedColors[3])}/>
     </div>
   );
 }
