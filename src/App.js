@@ -1,14 +1,19 @@
 import React from "react";
 import Palette from "./Palette";
-import seedColors from './seedColors'
+import seedColors from "./seedColors";
 import { generatePalettes } from "./ColorHelpers";
-import './App.css'
+import { Route ,Switch} from "react-router-dom";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-    {console.log(generatePalettes(seedColors[3]))}
-      <Palette palette={generatePalettes(seedColors[3])}/>
+      <Switch>
+      <Route exact path="/" render={()=><h1>Pelette list gos here!</h1>}/>
+      <Route exact path="/palette/:id" render={()=><h1>Invidual palette</h1>}/>
+      </Switch>
+      <Palette palette={generatePalettes(seedColors[4])} />
     </div>
   );
 }
