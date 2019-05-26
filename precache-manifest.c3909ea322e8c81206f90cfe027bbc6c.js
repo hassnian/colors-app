@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4fd68a8b99f6bb0c334b1d71b572849",
+    "revision": "c2f48630d12a327bc05a578219845e87",
     "url": "/colors-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/colors-app/static/css/2.509658c0.chunk.css"
   },
   {
-    "revision": "c0848343932de467a6dd",
+    "revision": "1a6d08d914cce9764d4a",
     "url": "/colors-app/static/css/main.0071afec.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/colors-app/static/js/2.0a253a23.chunk.js"
   },
   {
-    "revision": "c0848343932de467a6dd",
-    "url": "/colors-app/static/js/main.8015fa23.chunk.js"
+    "revision": "1a6d08d914cce9764d4a",
+    "url": "/colors-app/static/js/main.c248a005.chunk.js"
   },
   {
     "revision": "658f8f8a04f3c7d8f86e",
