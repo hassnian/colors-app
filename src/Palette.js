@@ -22,7 +22,7 @@ export class Palette extends Component {
     const { colors ,paletteName,emoji,id} = this.props.palette;
     const { level ,format} = this.state;
     const colorBoxes = colors[level].map(color => (
-      <ColorBox key={color.id} paletteId={id} id={color.id} background={color[format]} name={color.name} />
+      <ColorBox  moreUrl={`/palette/${id}/${color.id}`} showLink key={color.id} paletteId={id} id={color.id} background={color[format]} name={color.name} />
     ));
     return (
       <div className="Palette">
