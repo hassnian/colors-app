@@ -6,45 +6,54 @@ import MiniPalette from "./MiniPalette";
 const styles = {
   root: {
     backgroundColor: "blue",
-    height:"100%",
-    display:"flex",
-    alignItems:"flex-start",
-    justifyContent:"center"
+    height: "100%",
+    display: "flex",
+    alignItems: "flex-start",
+    justifyContent: "center"
   },
   container: {
-    width:"50%",
-    display:"flex",
-    alignItems:"flex-start",
-    flexDirection:"column",
-    flexWrap:"wrap",
-    
+    width: "50%",
+    display: "flex",
+    alignItems: "flex-start",
+    flexDirection: "column",
+    flexWrap: "wrap"
   },
   nav: {
-    display:"flex",
-    width:"100%",
-    justifyContent:"space-between",
-    color:"white",
+    display: "flex",
+    width: "100%",
+    justifyContent: "space-between",
+    color: "white"
   },
   palettes: {
-    boxSizing:"border-box",
-    width:"100%",
-    display:"grid",
-    gridTemplateColumns:"repeat(3,30%)",
-    gridGap:"5%"
+    boxSizing: "border-box",
+    width: "100%",
+    display: "grid",
+    gridTemplateColumns: "repeat(3,30%)",
+    gridGap: "5%"
   }
 };
 
 export class PaletteList extends Component {
+  constructor(props) {
+    super(props);
+    this.goToPalette = this.goToPalette.bind(this);
+  }
+
+  goToPalette(id) {
+    this.props.history.push(`/palette/${id}`);
+  }
   render() {
     const { palettes, classes } = this.props;
-    const miniPalettes = palettes.map(palette => <MiniPalette {...palette} />);
+    const miniPalettes = palettes.map(palette => (
+      <MiniPalette handleClick={()=>this.goToPalette(palette.id)} {...palette} />
+    ));
     return (
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
             <h1>React Colors</h1>
           </nav>
-        <div className={classes.palettes}>{miniPalettes}</div>
+          <div className={classes.palettes}>{miniPalettes}</div>
         </div>
       </div>
     );
